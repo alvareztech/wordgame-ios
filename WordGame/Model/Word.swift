@@ -31,6 +31,7 @@ struct Word: Codable, Equatable {
         all[Int.random(in: 0..<all.count)]
     }
     
+    /// Returns with a probability of 25 percent the same word `self`
     var randomOfFour: Word {
         let candidates = [self, Word.random, Word.random, Word.random]
         return candidates[Int.random(in: 0..<candidates.count)]
