@@ -14,6 +14,9 @@
 		370DEECA29217B5D003A2CC5 /* WordGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DEEC929217B5D003A2CC5 /* WordGameTests.swift */; };
 		370DEED429217B5D003A2CC5 /* WordGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DEED329217B5D003A2CC5 /* WordGameUITests.swift */; };
 		370DEED629217B5D003A2CC5 /* WordGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DEED529217B5D003A2CC5 /* WordGameUITestsLaunchTests.swift */; };
+		370DEEE329217BF8003A2CC5 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DEEE229217BF8003A2CC5 /* Word.swift */; };
+		370DEEE629217C49003A2CC5 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 370DEEE529217C49003A2CC5 /* words.json */; };
+		370DEEE82921D19E003A2CC5 /* WordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370DEEE72921D19E003A2CC5 /* WordScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		370DEECF29217B5D003A2CC5 /* WordGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370DEED329217B5D003A2CC5 /* WordGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameUITests.swift; sourceTree = "<group>"; };
 		370DEED529217B5D003A2CC5 /* WordGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		370DEEE229217BF8003A2CC5 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		370DEEE529217C49003A2CC5 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		370DEEE72921D19E003A2CC5 /* WordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,9 @@
 		370DEEB729217B5A003A2CC5 /* WordGame */ = {
 			isa = PBXGroup;
 			children = (
+				370DEEEA292213C3003A2CC5 /* View */,
+				370DEEE9292213BB003A2CC5 /* Model */,
 				370DEEB829217B5A003A2CC5 /* WordGameApp.swift */,
-				370DEEBA29217B5A003A2CC5 /* ContentView.swift */,
 				370DEEBC29217B5C003A2CC5 /* Assets.xcassets */,
 				370DEEBE29217B5C003A2CC5 /* Preview Content */,
 			);
@@ -125,6 +132,32 @@
 				370DEED529217B5D003A2CC5 /* WordGameUITestsLaunchTests.swift */,
 			);
 			path = WordGameUITests;
+			sourceTree = "<group>";
+		};
+		370DEEE429217C32003A2CC5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				370DEEE529217C49003A2CC5 /* words.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		370DEEE9292213BB003A2CC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				370DEEE229217BF8003A2CC5 /* Word.swift */,
+				370DEEE429217C32003A2CC5 /* Data */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		370DEEEA292213C3003A2CC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				370DEEBA29217B5A003A2CC5 /* ContentView.swift */,
+				370DEEE72921D19E003A2CC5 /* WordScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370DEEE629217C49003A2CC5 /* words.json in Resources */,
 				370DEEC029217B5C003A2CC5 /* Preview Assets.xcassets in Resources */,
 				370DEEBD29217B5C003A2CC5 /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +293,8 @@
 			files = (
 				370DEEBB29217B5A003A2CC5 /* ContentView.swift in Sources */,
 				370DEEB929217B5A003A2CC5 /* WordGameApp.swift in Sources */,
+				370DEEE329217BF8003A2CC5 /* Word.swift in Sources */,
+				370DEEE82921D19E003A2CC5 /* WordScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

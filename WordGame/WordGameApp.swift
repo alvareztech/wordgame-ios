@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+let kDefaultTimerInSeconds: TimeInterval = 30
+let kDefaultWrongAtteptsAllowed = 10
+let kDefaultWordsAllowed = 15
+
 @main
 struct WordGameApp: App {
     var body: some Scene {
