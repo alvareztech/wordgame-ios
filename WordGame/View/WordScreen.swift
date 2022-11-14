@@ -29,10 +29,12 @@ struct WordScreen: View {
             Text(firstWord?.spanish ?? "")
                 .font(.largeTitle)
                 .fontWeight(.bold)
+                .animation(.easeIn)
                 .accessibilityIdentifier("firstWord")
             Text(secondWord?.english ?? "")
                 .font(.title)
                 .foregroundColor(.secondary)
+                .animation(.easeIn)
                 .accessibilityIdentifier("secondWord")
             Spacer()
             HStack {
