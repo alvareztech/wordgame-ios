@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-let kDefaultTimerInSeconds: TimeInterval = 30
-let kDefaultWrongAtteptsAllowed = 10
-let kDefaultWordsAllowed = 15
+let kDefaultTimerInSeconds: TimeInterval = 5
+let kDefaultWrongAttemptsAllowed = 3
+let kDefaultMaxWordsDisplayed = 15
 
 @main
 struct WordGameApp: App {
