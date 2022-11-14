@@ -25,7 +25,7 @@ The game is very small so I decided to use a minimal architecture pattern MV ([s
 
 ### Decisions made to solve certain aspects of the game
 
-Simplifying the code using the modern features that Swift provides us with was important. This minimizes the amount of code and files. _Less code, less bugs._
+Simplifying the code using the modern features that Swift, SwiftUI provides us with was important. This minimizes the amount of code and files. _Less code, less bugs._
 
 ### Decisions made because of restricted time
 
